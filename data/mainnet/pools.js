@@ -41,7 +41,7 @@ module.exports = [
     collateralAddress: addresses.ARBITRUM_ONE.V2.pGOLD.NewVault,
     rewardAPY: [],
     rewardAPR: null,
-    rewardTokens: [addresses.ARBITRUM_ONE.iFARM, addresses.ARBITRUM_ONE.V2.iPoison.NewVault],
+    rewardTokens: [addresses.ARBITRUM_ONE.iFARM],
     rewardTokenSymbols: ['iFARM', 'fiPoison'],
     stakeAndDepositHelpMessage: `
       <div class="help-message">
@@ -73,7 +73,7 @@ module.exports = [
     collateralAddress: addresses.ARBITRUM_ONE.V2.pSLVR.NewVault,
     rewardAPY: [],
     rewardAPR: null,
-    rewardTokens: [addresses.ARBITRUM_ONE.iFARM, addresses.ARBITRUM_ONE.V2.iPoison.NewVault],
+    rewardTokens: [addresses.ARBITRUM_ONE.iFARM],
     rewardTokenSymbols: ['iFARM', 'fiPoison'],
     stakeAndDepositHelpMessage: `
       <div class="help-message">
