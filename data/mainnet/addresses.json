@@ -2586,6 +2586,8 @@
     "agEUR": "0xFA5Ed56A203466CbBC2430a43c66b9D8723528E7",
     "LUSD": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b",
     "SLIZ": "0x463913D3a3D3D291667D53B8325c598Eb88D3B0e",
+    "POISON": "0x31C91D8Fb96BfF40955DD2dbc909B36E8b104Dde",
+    "pTSLA": "0x8DCD3393a6e48E898A60e05baeC0d568df128F89",
     "V2": {
       "lizard_SLIZ_ETH": {
         "Underlying": "0x751F3B8ca139bC1F3482b193297485f14208826a",
@@ -2769,6 +2771,48 @@
         "NewStrategy": "0xcF509a3de881C7A2781C22b893Fb30B57Ce6d502",
         "NewPool": "0x200e629872dDaf944159b706b1C6eC4fE80e93fa",
         "Miner": "0x7f90122bf0700f9e7e1f688fe926940e8839f353",
+        "PoolId": "1"
+      },
+      "iPoison": {
+        "Underlying": "0xDA016d31f2B52C73D7c1956E955ae8A507b305bB",
+        "NewVault": "0x9F65E93209EFAe76a716ffF7d40089d2aA1b9ad1",
+        "NewStrategy": "0x5429cAF25bB04985f677bbf5ED630A9FE47D284f",
+        "NewPool": "0x63D9284F261224213849FE338AF6aBEA4bc62E06",
+        "PoolId": "4"
+      },
+      "poison_pGOLD_USDC": {
+        "Underlying": "0xB5d8DF1D117C4E92dD481FD3E4c1C5857767f9fe",
+        "NewVault": "0x52de41ccd17A6663A4e237fF62ab674d779ab7E8",
+        "NewStrategy": "0xdCc5A9345da5F3ea9e7174C2526250F35bAE923e",
+        "NewPool": "0x6FBc177bb869dF6F1eD40e83380E711cB4cCA944",
+        "PoolId": "3"
+      },
+      "poison_pSLVR_USDC": {
+        "Underlying": "0x5f586464c9DF5cA0C685798B4Fa092136f087BEc",
+        "NewVault": "0xbD80055f29dC7C450A0171Af52e72D7e347a816e",
+        "NewStrategy": "0xD7cb4169bd6E64F7a4a39d6Dc0a071366cec4012",
+        "NewPool": "0xf56200a59eFb9Bb520F3D61732B3444cCb2A564C",
+        "PoolId": "6"
+      },
+      "poison_pTSLA_USDC": {
+        "Underlying": "0x00468cd187492080C66A96F28581881fC306f851",
+        "NewVault": "0x869254Ac90a36e8d50fCf3ED33d81B44fEA5ccAd",
+        "NewStrategy": "0xA5b87370A79E1A38871A3779Ed91581Ae735211a",
+        "NewPool": "0x2925a38cf8B9432AB467006999eEddcaA59bd86a",
+        "PoolId": "8"
+      },
+      "pGOLD": {
+        "Underlying": "0xF602A45812040D90B202355bdc05438918CD3FE3",
+        "NewVault": "0xB1e6B139E7E49B4CD1573eFF7F790A6Cde589034",
+        "NewStrategy": "0x48431f3BeDD1467314aDe6AD4456222331209226",
+        "NewPool": "0x0F9b97504f42ac98128cDBE7ffB51E4F4eff736A",
+        "PoolId": "0"
+      },
+      "pSLVR": {
+        "Underlying": "0x867B1Cd06039Eb70385788a048B57F6d4fDC5Dbb",
+        "NewVault": "0x85902AB84FF1F020a83804baF42680b6e9CC8a12",
+        "NewStrategy": "0x21908c6DD33ffb094681A9a9354ef054F5779Afa",
+        "NewPool": "0x7bfE592eF8B5D87ea178Ad18c28B45a93E015f1A",
         "PoolId": "1"
       }
     }
