@@ -223,6 +223,9 @@ module.exports = {
         ],
       },
     ],
+    apyDescriptionOverride: [
+      'Auto harvested <b>Poison</b> deposited into the <b>iPoison</b> vault for higher APY',
+    ],
     cmcRewardTokenSymbols: ['iFARM', 'POISON'],
   },
   pSLVR: {
@@ -256,6 +259,9 @@ module.exports = {
           profitSharingCut10Percent,
         ],
       },
+    ],
+    apyDescriptionOverride: [
+      'Auto harvested <b>Poison</b> deposited into the <b>iPoison</b> vault for higher APY',
     ],
     cmcRewardTokenSymbols: ['iFARM', 'POISON'],
   },
