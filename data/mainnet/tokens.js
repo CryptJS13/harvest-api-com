@@ -61,6 +61,7 @@ module.exports = {
     },
   },
   balancer_frxETH: {
+    isNew: true,
     category: VAULT_CATEGORIES_IDS.BALANCER,
     chain: CHAINS_ID.MATIC_MAINNET,
     logoUrl: './icons/frxeth-eth.png',
@@ -104,6 +105,7 @@ module.exports = {
     },
   },
   balancer_SPHERE_MATIC: {
+    isNew: true,
     category: VAULT_CATEGORIES_IDS.BALANCER,
     chain: CHAINS_ID.MATIC_MAINNET,
     logoUrl: './icons/sphere-matic.png',
@@ -147,6 +149,7 @@ module.exports = {
     },
   },
   balancer_stETH_polygon: {
+    isNew: true,
     category: VAULT_CATEGORIES_IDS.BALANCER,
     chain: CHAINS_ID.MATIC_MAINNET,
     logoUrl: './icons/steth-eth.png',
@@ -179,12 +182,13 @@ module.exports = {
     cmcRewardTokenSymbols: ['iFARM', 'BAL'],
   },
   balancer_wUSDR_USDC_polygon: {
+    isNew: true,
     category: VAULT_CATEGORIES_IDS.BALANCER,
     chain: CHAINS_ID.MATIC_MAINNET,
     logoUrl: './icons/wusdr-usdc.png',
     apyIconUrls: ['./icons/balancer.png'],
     apyTokenSymbols: ['BAL'],
-    displayName: 'frxETH-ETH',
+    displayName: 'wUSDR-USDC',
     subLabel: 'Balancer',
     tokenAddress: addresses.MATIC.V2.balancer_wUSDR_USDC.Underlying,
     decimals: '18',
