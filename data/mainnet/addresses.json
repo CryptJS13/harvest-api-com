@@ -1929,6 +1929,9 @@
     "SD": "0x1d734A02eF1e1f5886e66b0673b71Af5B53ffA94",
     "LDO": "0xC3C7d422809852031b44ab29EEC9F1EfF2A58756",
     "MAI": "0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
+    "wstETH": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
+    "SPHERE": "0x62F594339830b90AE4C084aE7D223fFAFd9658A7",
+    "frxETH": "0xEe327F889d5947c1dc1934Bb208a1E792F953E96",
     "V2": {
       "quickswap_ETH_MATIC": {
         "Underlying": "0xadbF1854e5883eB8aa7BAf50705338739e558E5b"
@@ -2620,6 +2623,70 @@
         "NewStrategy": "0x84f6AA524c74D565d5A01E0e6ad388E4246E0378",
         "NewPool": "0xFcC9682E08E3B001e9516683cbAAf573aFFc6415",
         "MasterChef": "0x20ec0d06f447d550fc6edee42121bc8c1817b97d"
+      },
+      "balancer_frxETH": {
+        "Underlying": "0x5DEe84FfA2DC27419Ba7b3419d7146E53e4F7dEd",
+        "NewVault": "0x33A770d609f8b3e7Fcfbfd699bAE890cBD00785F",
+        "NewStrategy": "0x20eC602B755f3f4Ed56149F0422E5802d851c5a1",
+        "NewPool": "0x31e75fE9cD6Ed1488D89dbdfc03E72AfAf7bdd3d",
+        "Gauge": "0xF75Bf196b64f2FCf942C29b5bE7f4742e4fD16Bd",
+        "PoolId": "0x5dee84ffa2dc27419ba7b3419d7146e53e4f7ded000200000000000000000a4e"
+      },
+      "balancer_SPHERE_MATIC": {
+        "Underlying": "0xf3312968c7D768C19107731100Ece7d4780b47B2",
+        "NewVault": "0x5D63eD276819AABE78Cd49F35f6c31a389614De5",
+        "NewStrategy": "0x957B664cb94c2C16691d689e021602Cb8E50B9C7",
+        "NewPool": "0x6Ff07D89b362EA451Be7DE8190B5093d874fadBc",
+        "Gauge": "0xFB0243ffDC5309A4ec13b9de9111Da02294b2571",
+        "PoolId": "0xf3312968c7d768c19107731100ece7d4780b47b2000200000000000000000a50"
+      },
+      "balancer_stETH": {
+        "Underlying": "0x65Fe9314bE50890Fb01457be076fAFD05Ff32B9A",
+        "NewVault": "0x39F5dC2718671b1cBd57D7cCbed6061aD1033590",
+        "NewStrategy": "0x2413f0433B751343eD667A759595CEd2cC104629",
+        "NewPool": "0x532E130D4849D198Eb5A41202C3B861bE575DB7D",
+        "Gauge": "0x94e5C0270250d9E13B0545279807eF8c6c4Ed2a3",
+        "PoolId": "0x65fe9314be50890fb01457be076fafd05ff32b9a000000000000000000000a96"
+      },
+      "balancer_wUSDR_USDC": {
+        "Underlying": "0x34A81e8956BF20b7448b31990A2c06F96830a6e4",
+        "NewVault": "0xC5562171fFC7b4fE691B1E5C18460AA07800a3D0",
+        "NewStrategy": "0x6b84E4e52571aC6A9E3f7f767fd9C996B7855D88",
+        "NewPool": "0xe3a0Bd1b2aa42231ccf41e0e6Ed85E523CdF5325",
+        "Gauge": "0x11F6b6fC8f652aF0a0cE411c01AEAe8536Fb836D",
+        "PoolId": "0x34a81e8956bf20b7448b31990a2c06f96830a6e4000200000000000000000a14"
+      },
+      "curve_3CRV": {
+        "Underlying": "0xE7a24EF0C5e95Ffb0f6684b813A78F2a3AD7D171",
+        "NewVault": "0x7919ba4Fe387C64449E970a1b9e59Ee439ff142B",
+        "NewStrategy": "0x24A62e9D72d3Ec081A5b166005b2c63b7Fd21A20",
+        "NewPool": "0x35ea364edE07841aA4851F68Ed248BfF49A70FBa",
+        "Miner": "0x445FE580eF8d70FF569aB36e80c647af338db351",
+        "PoolId": "2"
+      },
+      "curve_3Crypto": {
+        "Underlying": "0xdAD97F7713Ae9437fa9249920eC8507e5FbB23d3",
+        "NewVault": "0x2De733b3313890223a5D822488f6DD96cA4701C3",
+        "NewStrategy": "0x3855f98B60c1DC467B906859F69B65237D09B8a6",
+        "NewPool": "0x88eeB3d4B097CcaD16ca636b45E42A1724409A4a",
+        "Miner": "0x92215849c439E1f8612b6646060B4E3E5ef822cC",
+        "PoolId": "3"
+      },
+      "curve_CRV_3Crypto": {
+        "Underlying": "0xA73EdCf18421B56D9AF1cE08A34E102E23b2C4B6",
+        "NewVault": "0x72d35bd4123F5c60d4cB84bfCb40946259223860",
+        "NewStrategy": "0x80F52C4fa6BddD68F6C8120d6d11c337859EB0Bd",
+        "NewPool": "0x654809693C0184CC04492C34d150a82369471233",
+        "Miner": "0xc7c939A474CB10EB837894D1ed1a77C61B268Fa7",
+        "PoolId": "8"
+      },
+      "curve_MATIC_3Crypto": {
+        "Underlying": "0xb0658482b405496C4EE9453cD0a463b134aEf9d0",
+        "NewVault": "0xd7F1ba7BC391B42Ff12472197B8Cdbeb1806c837",
+        "NewStrategy": "0xD56449755Cc1A1cfAA1A318DcEb9edc729ddA450",
+        "NewPool": "0x3B5DB41C26039C8D7C125a2200E564377A3554aa",
+        "Miner": "0x7BBc0e92505B485aeb3e82E828cb505DAf1E50c6",
+        "PoolId": "9"
       }
     }
   },

@@ -94,5 +94,15 @@
     "boostedUnderlyings": ["0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0", "0xae78736Cd615f374D3085123A210448E74Fc6393", "0xac3E018457B222d93114458476f3E3416Abbe38F"],
     "boostTypes": ["stakedEth", "stakedEth", "stakedEth"],
     "poolId": "0x5aee1e99fe86960377de9f88689616916d5dcabe000000000000000000000467"
+  },
+  "0x5DEe84FfA2DC27419Ba7b3419d7146E53e4F7dEd": {
+    "boostedUnderlyings": ["0xEe327F889d5947c1dc1934Bb208a1E792F953E96"],
+    "boostTypes": ["stakedEth"],
+    "poolId": "0x5dee84ffa2dc27419ba7b3419d7146e53e4f7ded000200000000000000000a4e"
+  },
+  "0x65Fe9314bE50890Fb01457be076fAFD05Ff32B9A": {
+    "boostedUnderlyings": ["0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD"],
+    "boostTypes": ["stakedEth"],
+    "poolId": "0x65fe9314be50890fb01457be076fafd05ff32b9a000000000000000000000a96"
   }
 }
