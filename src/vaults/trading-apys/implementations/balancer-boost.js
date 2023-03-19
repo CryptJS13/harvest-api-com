@@ -75,13 +75,18 @@ const getStakedEthApy = async (token, networkId) => {
     return await get7MAAPRs(networkId)
   } else if (token == '0xae78736Cd615f374D3085123A210448E74Fc6393') {
     return await getYearlyAPR(networkId)
+  } else if (token == '0xac3E018457B222d93114458476f3E3416Abbe38F') {
+    //HOTFIX
+    return 10
   }
 }
 
 const getStakedMaticApy = async token => {
   if (token == '0xfa68FB4628DFF1028CFEc22b4162FCcd0d45efb6') {
+    //HOTFIX
     return 5.76
   } else {
+    //HOTFIX
     return 6.3
   }
 }
