@@ -56,7 +56,7 @@ module.exports = {
     logoUrl: './icons/magic-eth.png',
     apyIconUrls: ['./icons/sushi.png', './icons/magic.png'],
     apyTokenSymbols: ['SUSHI', 'MAGIC'],
-    displayName: 'ETH-MAGIC',
+    displayName: 'MAGIC-ETH',
     subLabel: 'SushiSwap',
     tokenAddress: addresses.ARBITRUM_ONE.V2.sushi_MAGIC_ETH.Underlying,
     decimals: '18',
