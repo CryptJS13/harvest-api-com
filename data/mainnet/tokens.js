@@ -113,11 +113,7 @@ module.exports = {
     vaultAddress: addresses.ARBITRUM_ONE.V2.sushi_DPX_ETH.NewVault,
     priceFunction: {
       type: GET_PRICE_TYPES.LP_TOKEN,
-      params: [
-        addresses.ARBITRUM_ONE.V2.sushi_DPX_ETH.Underlying,
-        'WETH_arbitrum',
-        'DPX_arbitrum',
-      ],
+      params: [addresses.ARBITRUM_ONE.V2.sushi_DPX_ETH.Underlying, 'WETH_arbitrum', 'DPX_arbitrum'],
     },
     estimateApyFunctions: [
       {
@@ -5211,11 +5207,12 @@ module.exports = {
     cmcRewardTokenSymbols: ['miFARM', 'pWETH', 'pUSDT'],
   },
   mUSD: {
+    inactive: true,
     chain: CHAINS_ID.MATIC_MAINNET,
-    category: [VAULT_CATEGORIES_IDS.MSTABLE, VAULT_CATEGORIES_IDS.STABLE_POLYGON],
+    category: VAULT_CATEGORIES_IDS.INACTIVE_POLYGON,
     logoUrl: './icons/mstable.svg',
-    apyIconUrls: ['./icons/mta.svg'],
-    apyTokenSymbols: ['MTA'],
+    apyIconUrls: [],
+    apyTokenSymbols: [],
     displayName: 'mUSD',
     subLabel: 'mStable',
     tokenAddress: addresses.MATIC.V2.mUSD.Underlying,

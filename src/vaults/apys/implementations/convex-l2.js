@@ -7,9 +7,9 @@ const getApy = async (address, poolId, profitSharingFactor, chain) => {
 
   const url = CONVEX_API_URLS[chain]
   let prefix
-  if (chain == '137'){
+  if (chain == '137') {
     prefix = 'polygon-'
-  } else if (chain == '42161'){
+  } else if (chain == '42161') {
     prefix = 'arbitrum-'
   }
 

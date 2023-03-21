@@ -17,11 +17,11 @@ const getPrice = async (minerAddress, crvTokenAddress, crvTokenDecimals, assets,
 
   await forEach(assets, async asset => {
     let assetPoolBalance, assetPriceUSD
-    if (asset == 'ETH' && network == '1' || asset == 'MATIC' && network == '137') {
+    if ((asset == 'ETH' && network == '1') || (asset == 'MATIC' && network == '137')) {
       assetPoolBalance = new BigNumber(await web3.eth.getBalance(minerAddress)).dividedBy(1e18)
-      if (network == '1'){
+      if (network == '1') {
         assetPriceUSD = await getTokenPrice('WETH')
-      } else if (network == '137'){
+      } else if (network == '137') {
         assetPriceUSD = await getTokenPrice('WMATIC')
       }
     } else {

@@ -78,7 +78,9 @@ const getApy = async (poolId, firstToken, secondToken, reduction, chain) => {
     if (rewarder !== '0x0000000000000000000000000000000000000000') {
       const rewarderInstance = new selectedWeb3.eth.Contract(rewarderContractArbitrum.abi, rewarder)
       const rewardToken = await getRewardToken(rewarderInstance)
-      const rewardTokenPerSecond = new BigNumber(await getRewardPerSecond(rewarderInstance)).dividedBy(OneEthInWei)
+      const rewardTokenPerSecond = new BigNumber(
+        await getRewardPerSecond(rewarderInstance),
+      ).dividedBy(OneEthInWei)
       const rewardTokenPrice = await getTokenPrice(rewardToken, CHAIN_TYPES.ARBITRUM_ONE)
       extraUsdPerSecond = rewardTokenPerSecond.times(rewardTokenPrice)
     }
