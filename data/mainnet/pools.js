@@ -6,6 +6,154 @@ const strat30PercentFactor = '0.7'
 module.exports = [
   {
     chain: CHAINS_ID.MATIC_MAINNET,
+    id: 'curve_3CRV_polygon',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.MATIC.V2.curve_3CRV.NewPool,
+    collateralAddress: addresses.MATIC.V2.curve_3CRV.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.MATIC.miFARM],
+    rewardTokenSymbols: ['miFARM'],
+    tradingApyFunction: {
+      type: TRADING_APY_TYPES.CONVEX_L2,
+      params: [
+        addresses.MATIC.V2.curve_3CRV.Miner,
+        addresses.MATIC.V2.curve_3CRV.PoolId,
+        CHAINS_ID.MATIC_MAINNET,
+      ],
+    },
+    stakeAndDepositHelpMessage: `
+      <div class="help-message">
+        <b>Deposit and stake:</b>
+        <ol class="numeric-list">
+          <li>
+            Go to&nbsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://curve.fi/#/polygon/pools/aave/deposit">
+              Curve.fi
+            </a>
+            and add liquidity.
+          </li>
+          <li>
+            Go back to this vault, hit &quot;MAX&quot; and then &quot;Deposit&quot;. Leave
+            &quot;Stake for rewards&quot; checked for staking
+          </li>
+        </ol>
+    </div>
+   `,
+  },
+  {
+    chain: CHAINS_ID.MATIC_MAINNET,
+    id: 'curve_3Crypto_polygon',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.MATIC.V2.curve_3Crypto.NewPool,
+    collateralAddress: addresses.MATIC.V2.curve_3Crypto.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.MATIC.miFARM],
+    rewardTokenSymbols: ['miFARM'],
+    tradingApyFunction: {
+      type: TRADING_APY_TYPES.CONVEX_L2,
+      params: [
+        addresses.MATIC.V2.curve_3Crypto.Miner,
+        addresses.MATIC.V2.curve_3Crypto.PoolId,
+        CHAINS_ID.MATIC_MAINNET,
+      ],
+    },
+    stakeAndDepositHelpMessage: `
+      <div class="help-message">
+        <b>Deposit and stake:</b>
+        <ol class="numeric-list">
+          <li>
+            Go to&nbsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://curve.fi/#/polygon/pools/atricrypto3/deposit">
+              Curve.fi
+            </a>
+            and add liquidity.
+          </li>
+          <li>
+            Go back to this vault, hit &quot;MAX&quot; and then &quot;Deposit&quot;. Leave
+            &quot;Stake for rewards&quot; checked for staking
+          </li>
+        </ol>
+    </div>
+   `,
+  },
+  {
+    chain: CHAINS_ID.MATIC_MAINNET,
+    id: 'curve_CRV_3Crypto_polygon',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.MATIC.V2.curve_CRV_3Crypto.NewPool,
+    collateralAddress: addresses.MATIC.V2.curve_CRV_3Crypto.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.MATIC.miFARM],
+    rewardTokenSymbols: ['miFARM'],
+    tradingApyFunction: {
+      type: TRADING_APY_TYPES.CONVEX_L2,
+      params: [
+        addresses.MATIC.V2.curve_CRV_3Crypto.Miner,
+        addresses.MATIC.V2.curve_CRV_3Crypto.PoolId,
+        CHAINS_ID.MATIC_MAINNET,
+      ],
+    },
+    stakeAndDepositHelpMessage: `
+      <div class="help-message">
+        <b>Deposit and stake:</b>
+        <ol class="numeric-list">
+          <li>
+            Go to&nbsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://curve.fi/#/polygon/pools/factory-crypto-1/deposit">
+              Curve.fi
+            </a>
+            and add liquidity.
+          </li>
+          <li>
+            Go back to this vault, hit &quot;MAX&quot; and then &quot;Deposit&quot;. Leave
+            &quot;Stake for rewards&quot; checked for staking
+          </li>
+        </ol>
+    </div>
+   `,
+  },
+  {
+    chain: CHAINS_ID.MATIC_MAINNET,
+    id: 'curve_MATIC_3Crypto_polygon',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.MATIC.V2.curve_MATIC_3Crypto.NewPool,
+    collateralAddress: addresses.MATIC.V2.curve_MATIC_3Crypto.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.MATIC.miFARM],
+    rewardTokenSymbols: ['miFARM'],
+    tradingApyFunction: {
+      type: TRADING_APY_TYPES.CONVEX_L2,
+      params: [
+        addresses.MATIC.V2.curve_MATIC_3Crypto.Miner,
+        addresses.MATIC.V2.curve_MATIC_3Crypto.PoolId,
+        CHAINS_ID.MATIC_MAINNET,
+      ],
+    },
+    stakeAndDepositHelpMessage: `
+      <div class="help-message">
+        <b>Deposit and stake:</b>
+        <ol class="numeric-list">
+          <li>
+            Go to&nbsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://curve.fi/#/polygon/pools/factory-crypto-83/deposit">
+              Curve.fi
+            </a>
+            and add liquidity.
+          </li>
+          <li>
+            Go back to this vault, hit &quot;MAX&quot; and then &quot;Deposit&quot;. Leave
+            &quot;Stake for rewards&quot; checked for staking
+          </li>
+        </ol>
+    </div>
+   `,
+  },
+  {
+    chain: CHAINS_ID.MATIC_MAINNET,
     id: 'balancer_frxETH',
     type: POOL_TYPES.INCENTIVE,
     tradingApyFunction: {
@@ -707,8 +855,12 @@ module.exports = [
     rewardTokens: [addresses.ARBITRUM_ONE.iFARM],
     rewardTokenSymbols: ['iFARM'],
     tradingApyFunction: {
-      type: TRADING_APY_TYPES.ARBITRUM_CURVE,
-      params: ['tricrypto'],
+      type: TRADING_APY_TYPES.CONVEX_L2,
+      params: [
+        addresses.ARBITRUM_ONE.V2.convex_USDT_WBTC_WETH_arbitrum.Miner,
+        addresses.ARBITRUM_ONE.V2.convex_USDT_WBTC_WETH_arbitrum.PoolId,
+        CHAINS_ID.ARBITRUM_ONE,
+      ],
     },
     stakeAndDepositHelpMessage: `
       <div class="help-message">
@@ -740,8 +892,12 @@ module.exports = [
     rewardTokens: [addresses.ARBITRUM_ONE.iFARM],
     rewardTokenSymbols: ['iFARM'],
     tradingApyFunction: {
-      type: TRADING_APY_TYPES.ARBITRUM_CURVE,
-      params: ['2pool'],
+      type: TRADING_APY_TYPES.CONVEX_L2,
+      params: [
+        addresses.ARBITRUM_ONE.V2.convex_USDC_USDT_arbitrum.Miner,
+        addresses.ARBITRUM_ONE.V2.convex_USDC_USDT_arbitrum.PoolId,
+        CHAINS_ID.ARBITRUM_ONE,
+      ],
     },
     stakeAndDepositHelpMessage: `
       <div class="help-message">

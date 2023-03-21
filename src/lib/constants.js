@@ -131,7 +131,7 @@ const COMPOUND_CTOKEN_API_URL = 'https://api.compound.finance/api/v2/ctoken'
 
 const APY_VISION_API_URL = 'https://stats.apy.vision/api/v1'
 
-const ARBITRUM_CONVEX_API_URL = 'https://www.convexfinance.com/api/curve-arbitrum-apys'
+const CONVEX_API_URLS = {'137': 'https://www.convexfinance.com/api/curve-polygon-apys', '42161': 'https://www.convexfinance.com/api/curve-arbitrum-apys'}
 
 const SUSHI_POOLS_IDS = {
   USDT: 0,
@@ -289,5 +289,5 @@ module.exports = {
   APE_API_URL,
   QUICKSWAP_GAMMA_ENDPOINT,
   ARBITRUM_RPC_URL,
-  ARBITRUM_CONVEX_API_URL,
+  CONVEX_API_URLS,
 }
