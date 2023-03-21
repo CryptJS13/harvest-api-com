@@ -2729,6 +2729,8 @@
     "SLIZ": "0x463913D3a3D3D291667D53B8325c598Eb88D3B0e",
     "POISON": "0x31C91D8Fb96BfF40955DD2dbc909B36E8b104Dde",
     "pTSLA": "0x8DCD3393a6e48E898A60e05baeC0d568df128F89",
+    "DPX": "0x6C2C06790b3E3E3c38e12Ee22F8183b37a13EE55",
+    "RDPX": "0x32Eb7902D4134bf98A28b963D26de779AF92A212",
     "V2": {
       "lizard_SLIZ_ETH": {
         "Underlying": "0x751F3B8ca139bC1F3482b193297485f14208826a",
@@ -2955,6 +2957,27 @@
         "NewStrategy": "0x21908c6DD33ffb094681A9a9354ef054F5779Afa",
         "NewPool": "0x7bfE592eF8B5D87ea178Ad18c28B45a93E015f1A",
         "PoolId": "1"
+      },
+      "sushi_MAGIC_ETH": {
+        "Underlying": "0xB7E50106A5bd3Cf21AF210A755F9C8740890A8c9",
+        "NewVault": "0x01cC486c2aB83BfC460CDecC43e2a3cDd76c11B6",
+        "NewStrategy": "0xe6f7299D18d8E96a5d035ea38720303eE95489ec",
+        "NewPool": "0x6FFe368D4dbbAc2D02492cF51BcB4DB9Ae4C4a59",
+        "PoolId": "13"
+      },
+      "sushi_DPX_ETH": {
+        "Underlying": "0x0C1Cf6883efA1B496B01f654E247B9b419873054",
+        "NewVault": "0x8F4D59C403a61EC197535f53E86Fdd3113DF2557",
+        "NewStrategy": "0x4e703Ff52fC0B8BE62FFF55A995F6642EAc55FA2",
+        "NewPool": "0xD7C3f8c1F32A932D33A9a8d2011170d1349Cc40D",
+        "PoolId": "17"
+      },
+      "sushi_RDPX_ETH": {
+        "Underlying": "0x7418F5A2621E13c05d1EFBd71ec922070794b90a",
+        "NewVault": "0xf18079c229AaEE497Cf2ce5D0Ec778d462003A2E",
+        "NewStrategy": "0x8dF2Dec432494fE5Ce529e67ca8C108979d55aE6",
+        "NewPool": "0x9100bb602F0d486E32e4A4b98AcA7AB094aa4B55",
+        "PoolId": "23"
       }
     }
   }
