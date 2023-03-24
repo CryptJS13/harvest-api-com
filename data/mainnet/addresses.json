@@ -2731,6 +2731,7 @@
     "pTSLA": "0x8DCD3393a6e48E898A60e05baeC0d568df128F89",
     "DPX": "0x6C2C06790b3E3E3c38e12Ee22F8183b37a13EE55",
     "RDPX": "0x32Eb7902D4134bf98A28b963D26de779AF92A212",
+    "ARB": "0x912CE59144191C1204E64559FE8253a0e49E6548",
     "V2": {
       "lizard_SLIZ_ETH": {
         "Underlying": "0x751F3B8ca139bC1F3482b193297485f14208826a",
@@ -2978,6 +2979,20 @@
         "NewStrategy": "0x8dF2Dec432494fE5Ce529e67ca8C108979d55aE6",
         "NewPool": "0x9100bb602F0d486E32e4A4b98AcA7AB094aa4B55",
         "PoolId": "23"
+      },
+      "lizard_ARB_ETH": {
+        "Underlying": "0xCeD06c9330B02C378C31c7b12570B1C38AbfcEA6",
+        "NewVault": "0x71Cc945b5a78b3F42D6af2B8D89256556E3D7dF1",
+        "NewStrategy": "0x3921863DD7A0EB6DF7FF2A1AA945AB35FD48D9EE",
+        "NewPool": "0x398CE9aA11d6BD616d17FbceeFFeaa36d5947de3",
+        "Gauge": "0xeCEe212b65a54cA7725aA19DCEed45effB3cf385"
+      },
+      "lizard_ARB_USDC": {
+        "Underlying": "0x9cB911Cbb270cAE0d132689cE11c2c52aB2DedBC",
+        "NewVault": "0x9794cBE584052292017Eeacd5732EFD4b796EFAA",
+        "NewStrategy": "0x4341Ae01CF1a65E2cdBd0d1Bf9E594E1D72b330e",
+        "NewPool": "0x15C286D6Ac7094343415350F54F196F6dD50B1C0",
+        "Gauge": "0xc43e8F9AE4c1Ef6b8b63CBFEfE8Fe90d375fe11C"
       }
     }
   }
