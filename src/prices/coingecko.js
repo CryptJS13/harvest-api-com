@@ -6,6 +6,7 @@ const { cache } = require('../lib/cache')
 const {
   COINGECKO_PRICE_API_ENDPOINT_CONTRACT,
   COINGECKO_PRICE_API_ENDPOINT_ID,
+  COINGECKO_API_KEY,
   CG_CACHE_TTL,
   CHAIN_TYPES,
 } = require('../lib/constants')
@@ -44,9 +45,11 @@ const priceByAddresses = (contractAddresses, ourChainId = CHAIN_TYPES.ETH, curre
       params: {
         contract_addresses: contractAddresses,
         vs_currencies: currency,
+        x_cg_pro_api_key: COINGECKO_API_KEY,
       },
     })
     .then(res => {
+      console.log(`${COINGECKO_PRICE_API_ENDPOINT_CONTRACT}/${getPlatformId(ourChainId)}`)
       console.log('priceByAddresses: res.data', res.data)
       if (!Object.keys(res.data).length) {
         return Promise.reject(new Error('No price for', contractAddresses))
@@ -69,9 +72,11 @@ const priceByIds = (ids, currency) =>
       params: {
         ids: ids,
         vs_currencies: currency,
+        x_cg_pro_api_key: COINGECKO_API_KEY,
       },
     })
     .then(res => {
+      console.log(`${COINGECKO_PRICE_API_ENDPOINT_ID}`)
       console.log('priceByIds: res.data', res.data)
       if (!Object.keys(res.data).length) {
         return Promise.reject(new Error('No price for', ids))
