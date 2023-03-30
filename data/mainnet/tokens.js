@@ -1516,7 +1516,8 @@ module.exports = {
   },
   StargateUSDC_arbitrum: {
     chain: CHAINS_ID.ARBITRUM_ONE,
-    category: VAULT_CATEGORIES_IDS.STABLECOINS,
+    inactive: true,
+    category: VAULT_CATEGORIES_IDS.INACTIVE_ARBITRUM,
     logoUrl: './icons/usdc.png',
     decimals: '6',
     tokenAddress: addresses.ARBITRUM_ONE.V2.StargateUSDC_arbitrum.Underlying,
@@ -1540,8 +1541,8 @@ module.exports = {
         ],
       },
     ],
-    apyIconUrls: ['./icons/stg.png'],
-    apyTokenSymbols: ['STG'],
+    apyIconUrls: [],
+    apyTokenSymbols: [],
     cmcRewardTokenSymbols: ['iFARM', 'STG'],
   },
   StargateUSDT_arbitrum: {
