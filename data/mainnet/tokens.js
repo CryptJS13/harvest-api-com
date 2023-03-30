@@ -891,6 +891,17 @@ module.exports = {
     ],
     cmcRewardTokenSymbols: ['iFARM', 'POISON'],
   },
+  fiPoison: {
+    chain: CHAINS_ID.ARBITRUM_ONE,
+    logoUrl: '',
+    tokenAddress: addresses.ARBITRUM_ONE.V2.iPoison.NewVault,
+    decimals: '18',
+    vaultAddress: null,
+    priceFunction: {
+      type: GET_PRICE_TYPES.F_TOKEN,
+      params: [addresses.ARBITRUM_ONE.V2.iPoison.NewVault, '18', CHAINS_ID.ARBITRUM_ONE],
+    },
+  },
   pGOLD: {
     isNew: true,
     category: VAULT_CATEGORIES_IDS.POISON,
