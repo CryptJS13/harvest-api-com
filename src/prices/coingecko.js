@@ -49,7 +49,6 @@ const priceByAddresses = (contractAddresses, ourChainId = CHAIN_TYPES.ETH, curre
       },
     })
     .then(res => {
-      console.log(`${COINGECKO_PRICE_API_ENDPOINT_CONTRACT}/${getPlatformId(ourChainId)}`)
       console.log('priceByAddresses: res.data', res.data)
       if (!Object.keys(res.data).length) {
         return Promise.reject(new Error('No price for', contractAddresses))
@@ -76,7 +75,6 @@ const priceByIds = (ids, currency) =>
       },
     })
     .then(res => {
-      console.log(`${COINGECKO_PRICE_API_ENDPOINT_ID}`)
       console.log('priceByIds: res.data', res.data)
       if (!Object.keys(res.data).length) {
         return Promise.reject(new Error('No price for', ids))
