@@ -28,7 +28,7 @@ module.exports = [
         <ol class="numeric-list">
           <li>
             Go to&nbsp;
-            <a target="_blank" rel="noopener noreferrer" href="https://arbitrum.curve.fi/factory-v2-41/deposit">
+            <a target="_blank" rel="noopener noreferrer" href="https://curve.fi/#/arbitrum/pools/factory-v2-41/deposit">
               curve.fi
             </a>
             and deposit <b>FRAX</b> and/or <b>USDC</b>
@@ -1071,7 +1071,7 @@ module.exports = [
         <ol class="numeric-list">
           <li>
             Go to&nbsp;
-            <a target="_blank" rel="noopener noreferrer" href="https://arbitrum.curve.fi/tricrypto/deposit">
+            <a target="_blank" rel="noopener noreferrer" href="https://curve.fi/#/arbitrum/pools/tricrypto/deposit">
               curve.fi
             </a>
             and deposit <b>USDT</b>, <b>WBTC</b> and/or <b>ETH</b>
@@ -1108,7 +1108,7 @@ module.exports = [
         <ol class="numeric-list">
           <li>
             Go to&nbsp;
-            <a target="_blank" rel="noopener noreferrer" href="https://arbitrum.curve.fi/2pool/deposit">
+            <a target="_blank" rel="noopener noreferrer" href="https://curve.fi/#/arbitrum/pools/2pool/deposit">
               curve.fi
             </a>
             and deposit <b>USDT</b>, <b>WBTC</b> and/or <b>ETH</b>
