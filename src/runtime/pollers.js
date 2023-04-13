@@ -40,7 +40,7 @@ const getProfitSharingFactor = chain => {
     case CHAIN_TYPES.MATIC:
       return 0.92
     case CHAIN_TYPES.ARBITRUM_ONE:
-      return 0.90
+      return 0.9
     default:
       return 0.85
   }
@@ -355,7 +355,10 @@ const getTotalGmv = async () => {
         console.log(`Error getting GMV for: ${symbol}`, err)
         hasErrors = true
       }
-
+      if (symbol == 'IFARM') {
+        //Skip adding iFARM TVL to total because of duplicate with profit-sharing-farm
+        continue
+      }
       totalGmv = totalGmv.plus(vault.totalValueLocked)
     }
   }
