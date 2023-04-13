@@ -40,9 +40,9 @@ const getProfitSharingFactor = chain => {
     case CHAIN_TYPES.MATIC:
       return 0.92
     case CHAIN_TYPES.ARBITRUM_ONE:
-      return 0.75
+      return 0.90
     default:
-      return 0.7
+      return 0.85
   }
 }
 
