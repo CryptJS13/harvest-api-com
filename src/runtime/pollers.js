@@ -348,10 +348,6 @@ const getTotalGmv = async () => {
   for (let networkId in vaults) {
     for (let symbol in vaults[networkId]) {
       const vault = vaults[networkId][symbol]
-      if (vault.inactive) {
-        continue
-      }
-
       try {
         console.log('Got GMV for:', vault.id, ':', vault.totalValueLocked)
         gmvList[symbol] = vault.totalValueLocked
@@ -371,7 +367,7 @@ const getTotalGmv = async () => {
 
   await forEach(relevantPools, async relevantPool => {
     try {
-      console.log('Getting GMV for: ', relevantPool.id, ':', relevantPool.totalValueLocked)
+      console.log('Got GMV for: ', relevantPool.id, ':', relevantPool.totalValueLocked)
       totalGmv = totalGmv.plus(relevantPool.totalValueLocked)
     } catch (err) {
       console.log(`Error getting GMV for: ${relevantPool.id}`, err)
