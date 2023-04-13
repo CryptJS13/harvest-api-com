@@ -8231,18 +8231,6 @@ module.exports = {
     ],
     cmcRewardTokenSymbols: ['FARM', 'CVX', 'CRV'],
   },
-  UNI_FARM_USDC: {
-    chain: CHAINS_ID.ETH_MAINNET,
-    displayName: 'FARM/USDC',
-    logoUrl: './icons/farm-usdc.png',
-    tokenAddress: addresses.UNI_FARM_USDC,
-    decimals: '18',
-    vaultAddress: null,
-    priceFunction: {
-      type: GET_PRICE_TYPES.LP_TOKEN,
-      params: [addresses.UNI_FARM_USDC, 'USDC', 'FARM'],
-    },
-  },
   UNI: {
     chain: CHAINS_ID.ETH_MAINNET,
     displayName: 'UNISWAP',
