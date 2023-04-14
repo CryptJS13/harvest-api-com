@@ -71,7 +71,7 @@ const getRewardApr = async (liquidityPercent, tvl, lpAddress) => {
   )
 
   const currentBlock = await web3.eth.getBlockNumber()
-  const fromBlock = currentBlock - 215000 //~30 days
+  const fromBlock = currentBlock - 430000 //~60 days
 
   const distributionEvents = orderBy(
     (
@@ -90,11 +90,14 @@ const getRewardApr = async (liquidityPercent, tvl, lpAddress) => {
     'blockNumber',
     'desc',
   )
-
   const lastDistribution = distributionEvents[0]
+  console.log(lastDistribution)
   const swiseAddress = lastDistribution.returnValues.token
   const swisePrice = await getTokenPrice(swiseAddress)
-  const swiseAmount = new BigNumber(lastDistribution.returnValues.amount).div(1e18)
+  let swiseAmount = new BigNumber(lastDistribution.returnValues.amount).div(1e18)
+  if (currentBlock > lastDistribution.returnValues.endBlock) {
+    swiseAmount = new BigNumber(0)
+  }
   const durationBlocks = new BigNumber(lastDistribution.returnValues.endBlock).minus(
     lastDistribution.returnValues.startBlock,
   )
