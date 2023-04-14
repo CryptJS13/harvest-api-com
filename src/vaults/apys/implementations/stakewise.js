@@ -91,7 +91,6 @@ const getRewardApr = async (liquidityPercent, tvl, lpAddress) => {
     'desc',
   )
   const lastDistribution = distributionEvents[0]
-  console.log(lastDistribution)
   const swiseAddress = lastDistribution.returnValues.token
   const swisePrice = await getTokenPrice(swiseAddress)
   let swiseAmount = new BigNumber(lastDistribution.returnValues.amount).div(1e18)
