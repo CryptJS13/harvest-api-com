@@ -542,7 +542,6 @@ module.exports = {
     },
   },
   balancer_frxETH: {
-    isNew: true,
     category: VAULT_CATEGORIES_IDS.BALANCER,
     chain: CHAINS_ID.MATIC_MAINNET,
     logoUrl: './icons/frxeth-eth.png',
@@ -630,7 +629,6 @@ module.exports = {
     },
   },
   balancer_stETH_polygon: {
-    isNew: true,
     category: VAULT_CATEGORIES_IDS.BALANCER,
     chain: CHAINS_ID.MATIC_MAINNET,
     logoUrl: './icons/steth-eth.png',
@@ -696,7 +694,6 @@ module.exports = {
     cmcRewardTokenSymbols: ['iFARM', 'BAL'],
   },
   balancer_OHM_ETH: {
-    isNew: true,
     chain: CHAINS_ID.ETH_MAINNET,
     category: [VAULT_CATEGORIES_IDS.AURA, VAULT_CATEGORIES_IDS.BALANCER],
     displayName: 'OHM-ETH',
