@@ -15,9 +15,6 @@ const getTradingApy = async (vaultAddress, providerKey, reduction) => {
   const posId = await getPosId(vaultAddress, web3)
 
   try {
-    console.log(
-      `${APY_VISION_API_URL}/uniswapv3/${providerKey}/positions/${posId}?access_token=${APY_VISION_TOKEN}`,
-    )
     response = await axios.get(
       `${APY_VISION_API_URL}/uniswapv3/${providerKey}/positions/${posId}?access_token=${APY_VISION_TOKEN}`,
     )
