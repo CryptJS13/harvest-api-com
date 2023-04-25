@@ -40,7 +40,11 @@ const getTradingApy = async (vaultAddress, providerKey, reduction) => {
     }
   } catch (err) {
     console.error('APY.vision API error: ', err)
-    apy = 0
+    if (currentPool.tradingApy > 0){
+      apy = currentPool.tradingApy
+    } else {
+      apy = 0
+    }
   }
   return apy
 }
