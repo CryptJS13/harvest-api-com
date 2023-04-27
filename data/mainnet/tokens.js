@@ -61,7 +61,7 @@ module.exports = {
     isNew: true,
     category: VAULT_CATEGORIES_IDS.BALANCER,
     chain: CHAINS_ID.MATIC_MAINNET,
-    logoUrl: './icons/tngbl-eth.png',
+    logoUrl: './icons/tngbl-usdc.png',
     apyIconUrls: ['./icons/balancer.png'],
     apyTokenSymbols: ['BAL'],
     displayName: 'TNGBL-ETH',
