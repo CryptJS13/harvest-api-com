@@ -64,7 +64,7 @@ module.exports = {
     logoUrl: './icons/tngbl-usdc.png',
     apyIconUrls: ['./icons/balancer.png'],
     apyTokenSymbols: ['BAL'],
-    displayName: 'TNGBL-ETH',
+    displayName: 'TNGBL-USDC',
     subLabel: 'Balancer',
     tokenAddress: addresses.MATIC.V2.balancer_TNGBL_USDC.Underlying,
     decimals: '18',
