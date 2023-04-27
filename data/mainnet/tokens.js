@@ -6409,7 +6409,7 @@ module.exports = {
         params: [
           addresses.V2.UniV3_ETH_sETH2.NewVault,
           '0x7379e81228514a1D2a6Cf7559203998E20598346',
-          profitSharingCut30Percent,
+          profitSharingCut15Percent,
         ],
       },
     ],
