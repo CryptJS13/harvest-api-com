@@ -4778,7 +4778,7 @@ module.exports = {
   UniV3_USDC_ETH_1400_2400: {
     isSingleAssetWithdrawalAllowed: true,
     chain: CHAINS_ID.ETH_MAINNET,
-    category: VAULT_CATEGORIES_IDS.INACTIVE,
+    category: VAULT_CATEGORIES_IDS.UNIV3,
     displayName: 'USDC-ETH',
     subLabel: 'Uniswap V3 - Range: 1.4K⟷2.4K',
     apyIconUrls: ['./icons/univ3.png'],
@@ -4807,7 +4807,7 @@ module.exports = {
   UniV3_DAI_ETH_1400_2400: {
     isSingleAssetWithdrawalAllowed: true,
     chain: CHAINS_ID.ETH_MAINNET,
-    category: VAULT_CATEGORIES_IDS.INACTIVE,
+    category: VAULT_CATEGORIES_IDS.UNIV3,
     displayName: 'DAI-ETH',
     subLabel: 'Uniswap V3 - Range: 1.4K⟷2.4K',
     apyIconUrls: ['./icons/univ3.png'],
@@ -4836,7 +4836,7 @@ module.exports = {
   UniV3_USDT_ETH_1400_2400: {
     isSingleAssetWithdrawalAllowed: true,
     chain: CHAINS_ID.ETH_MAINNET,
-    category: VAULT_CATEGORIES_IDS.INACTIVE,
+    category: VAULT_CATEGORIES_IDS.UNIV3,
     displayName: 'USDT-ETH',
     subLabel: 'Uniswap V3 - Range: 1.4K⟷2.4K',
     apyIconUrls: ['./icons/univ3.png'],
@@ -7250,7 +7250,7 @@ module.exports = {
   },
   UniV3_BUSD_USDC: {
     chain: CHAINS_ID.ETH_MAINNET,
-    category: VAULT_CATEGORIES_IDS.INACTIVE,
+    category: VAULT_CATEGORIES_IDS.UNIV3,
     displayName: 'BUSD-USDC',
     subLabel: 'Uniswap V3',
     apyIconUrls: ['./icons/univ3.png'],
@@ -7336,7 +7336,7 @@ module.exports = {
   UniV3_USDC_USDT: {
     isSingleAssetWithdrawalAllowed: true,
     chain: CHAINS_ID.ETH_MAINNET,
-    category: VAULT_CATEGORIES_IDS.INACTIVE,
+    category: VAULT_CATEGORIES_IDS.UNIV3,
     displayName: 'USDC-USDT',
     subLabel: 'Uniswap V3',
     apyIconUrls: ['./icons/univ3.png'],
